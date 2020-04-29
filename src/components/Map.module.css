@@ -1,11 +1,24 @@
 .pin {
+<<<<<<< HEAD
+    content: url(/static/media/pin.5ed13955.svg);
+    position: absolute;
+    width: 20px;
+    border: 0;
+=======
     position: absolute;
     top: 205px;
     left: 592px
+>>>>>>> 89a0edec904c02e3147cf8378fd4fcbd6747b22c
 }
 
 .background {
     background-image: url(./img/Worldhtml.jpg);
+<<<<<<< HEAD
+    width: 1520px;
+    position: absolute;
+    height: auto;
+    min-height: 100%;
+=======
   width: 1520px;position: absolute;
   height: auto;
   min-height: 100%;
@@ -14,5 +27,6 @@
 
 .area {
     shape-outside: circle();
+>>>>>>> 89a0edec904c02e3147cf8378fd4fcbd6747b22c
 
 }
