@@ -1,0 +1,24 @@
+.photo {
+  width: 160px;
+}
+
+.containerBouton {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.containerTitle {
+  text-align: center;
+}
+
+.containerPerson {
+  margin-top: 3rem;
+}
+
+h2 {
+  margin-top: 3rem;
+}
+
+.ContainerBody {
+  background: linear-gradient(#DBE6F6, white);
+}
