@@ -1,0 +1,18 @@
+.pin {
+    position: absolute;
+    top: 205px;
+    left: 592px
+}
+
+.background {
+    background-image: url(./img/Worldhtml.jpg);
+  width: 1520px;position: absolute;
+  height: auto;
+  min-height: 100%;
+
+}
+
+.area {
+    shape-outside: circle();
+
+}
