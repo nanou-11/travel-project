@@ -2,8 +2,10 @@
 import Map from './components/Map.jsx';
 import React from "react";
 import "./App.css";
-import Start from "./components/Start";
+// import Start from "./components/Start";
 import { BrowserRouter } from "react-router-dom";
+import Modals from './components/Modals'
+
 
 function App() {
   return (
@@ -11,8 +13,7 @@ function App() {
       <Map />
       <BrowserRouter>
       
-        <Start />
-     
+        <Modals id="1383622213"/>     
       </BrowserRouter>
     </div>
   );
