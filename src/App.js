@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       
-        <Modals props={"1383622213"}/>     
+        <Modals id="1383622213"/>     
       </BrowserRouter>
     </div>
   );
