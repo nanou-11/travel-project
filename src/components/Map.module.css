@@ -1,0 +1,15 @@
+.pin {
+    content: url(/static/media/pin.5ed13955.svg);
+    position: absolute;
+    width: 20px;
+    border: 0;
+}
+
+.background {
+    background-image: url(./img/Worldhtml.jpg);
+    width: 1520px;
+    position: absolute;
+    height: auto;
+    min-height: 100%;
+
+}
