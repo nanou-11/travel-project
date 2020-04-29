@@ -11,18 +11,10 @@ import {
 import styles from "./CardWebcam.module.css";
 
 const CardWebcam = ({ city, country, video }) => {
-  const { buttonLabel, className } = { city, country, video };
-
-  const [modal, setModal] = useState(false);
-
-  const toggle = () => setModal(!modal);
+  
 
   return (
     <div>
-      <Button color="danger" onClick={toggle}>
-        {buttonLabel}
-      </Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
         <Card>
           <iframe
             className={`${styles.video} mx-auto d-block`}
@@ -37,7 +29,6 @@ const CardWebcam = ({ city, country, video }) => {
             <CardSubtitle className={styles.text}>{country}</CardSubtitle>
           </CardBody>
         </Card>
-      </Modal>
     </div>
   );
 };
