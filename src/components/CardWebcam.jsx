@@ -8,9 +8,9 @@ import {
   CardSubtitle,
 } from "reactstrap";
 
-import styles from "./CardModal.module.css";
+import styles from "./CardWebcam.module.css";
 
-const CardModal = ({ city, country, video }) => {
+const CardWebcam = ({ city, country, video }) => {
   const { buttonLabel, className } = { city, country, video };
 
   const [modal, setModal] = useState(false);
@@ -42,4 +42,4 @@ const CardModal = ({ city, country, video }) => {
   );
 };
 
-export default CardModal;
+export default CardWebcam;

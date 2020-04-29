@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 // import Start from "./components/Start";
 import { BrowserRouter } from "react-router-dom";
-import CardModal from './components/CardModal'
+import Modals from './components/Modals'
 
 
 function App() {
@@ -10,8 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       
-        <CardModal city="Londres" country="United Kingdom" video="https://webcams.windy.com/webcams/public/embed/player/1259146823/lifetime"/>
-     
+        <Modals props={"1383622213"}/>     
       </BrowserRouter>
     </div>
   );
