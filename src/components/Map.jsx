@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Map.module.css'
 
+<<<<<<< HEAD
 function Map() {
     return (
       <div className={styles.background}>
@@ -17,6 +18,15 @@ function Map() {
         <img className={styles.pin} style={{top: 116, left: 64}} title="États-Unis d'Amérique" alt ="pins"/>
         <img className={styles.pin} style={{top: 248, left: 1084}} title="Japon" alt ="pins"/>
 
+=======
+const worldImage = require('./img/map.jpg')
+const mapPin = require('./img/pin.svg')
+
+function Map() {
+    return (
+      <div className={styles.background}>
+        <img className={styles.pin} src={mapPin} width="20px" border="0" alt ="pins"/>  
+>>>>>>> 89a0edec904c02e3147cf8378fd4fcbd6747b22c
       </div>
 
     )
