@@ -1,0 +1,10 @@
+.video {
+    padding-left: 1vw;
+    padding-right :1vw;
+    padding-top : 1vw;
+}
+.text {
+    text-align:center;
+    font-family: 'Love Ya Like A Sister', cursive !important; 
+    font-size : 2vw;
+}
