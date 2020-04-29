@@ -11,7 +11,7 @@ function App() {
       <Map />
       <BrowserRouter>
       
-        <Start />
+        <Map />
      
       </BrowserRouter>
     </div>
