@@ -6,6 +6,7 @@ import {
   CarouselCaption,
   Button
 } from 'reactstrap';
+import {Link} from 'react-router-dom'
 
 import styles from './Start.module.css'
 
@@ -74,7 +75,7 @@ const Start = (props) => {
         previous={previous}
       >
         {/* <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/> */}
-        <Button size="lg"className={styles.button}>Let's go !</Button>
+        <Button tag={Link} to="/mapworld" size="lg"className={styles.button}>Let's go !</Button>
         {slides}
         {/* <h1 className={styles.h1}>coucou</h1> */}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />

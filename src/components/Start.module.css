@@ -15,12 +15,12 @@
   justify-content: center;
   padding-left: 0;
   margin-right: 15%;
-  margin-left: 45%;
-  width:10vw;
+  margin-left: 43%;
+  width:15vw;
   background-color: red !important;
   border-radius : 50px !important;
   font-family: 'Love Ya Like A Sister', cursive !important;  
-  font-size : 30px;
+  font-size : 30px !important;
 }
 .h1 {
     position: absolute;
