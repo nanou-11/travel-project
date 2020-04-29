@@ -1,14 +1,16 @@
 import React from "react";
 import "./App.css";
-import Start from "./components/Start";
+// import Start from "./components/Start";
 import { BrowserRouter } from "react-router-dom";
+import CardModal from './components/CardModal'
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       
-        <Start />
+        <CardModal city="Londres" country="United Kingdom" video="https://webcams.windy.com/webcams/public/embed/player/1259146823/lifetime"/>
      
       </BrowserRouter>
     </div>
