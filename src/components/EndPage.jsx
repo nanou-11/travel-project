@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 import {
   Container,
   Row,
@@ -11,7 +10,7 @@ import {
 } from "reactstrap";
 import styles from "./EndPage.module.css";
 
-const profileImage = require("./images/profile.jpg");
+const profileImage = require("./img/profile.jpg");
 
 function EndPage() {
   return (

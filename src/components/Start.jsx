@@ -75,7 +75,7 @@ const Start = (props) => {
         previous={previous}
       >
         {/* <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex}/> */}
-        <Button tag={Link} to="/mapworld" size="lg"className={styles.button}>Let's go !</Button>
+        <Button tag={Link} to="/map" size="lg"className={styles.button}>Let's go !</Button>
         {slides}
         {/* <h1 className={styles.h1}>coucou</h1> */}
         <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />

@@ -4,7 +4,7 @@ import Modals from './Modals'
 import {  Modal } from "reactstrap";
 
 
-function Map({ city, country, video }) {
+function MapWorld({ city, country, video }) {
   
   const { buttonLabel, className } = { city, country, video };
 
@@ -100,4 +100,4 @@ function Map({ city, country, video }) {
     )
 };
 
-export default Map;
+export default MapWorld;
