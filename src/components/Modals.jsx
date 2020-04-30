@@ -1,6 +1,9 @@
 import React from "react";
 import CardWebcam from "./CardWebcam";
 import Axios from "axios";
+import { Spinner } from "reactstrap";
+import styles from "./Modal.module.css"
+
 
 
 
@@ -9,6 +12,7 @@ class Modals extends React.Component {
     super(props);
     this.state = {
       dataApi: [],
+      isLoading: true,
     };
     this.getData = this.getData.bind(this);
   }
@@ -16,8 +20,8 @@ class Modals extends React.Component {
   getData() {
     Axios.get(
       `https://api.windy.com/api/webcams/v2/list/webcam=${this.props.id}d?show=webcams:image,location,player&key=wB2e2djyI9TxNvZWjJs0oG4frcQoqA77`
-    ).then((res) => this.setState({ dataApi: res.data.result.webcams[0] }));
-    console.log(this.state.dataApi);
+    ).then((res) => this.setState({ dataApi: res.data.result.webcams[0],isLoading: false  }));
+    
   }
 
   componentDidMount() {
@@ -26,7 +30,12 @@ class Modals extends React.Component {
 
   render() {
     const {dataApi} = this.state
-    return (
+    if(this.state.isLoading){
+      return(
+        <div className={styles.loadingSpinner}><Spinner color="danger" /></div>
+      )}
+      
+      return (
       <div>
             <CardWebcam
               city={dataApi.location && dataApi.location.city}
