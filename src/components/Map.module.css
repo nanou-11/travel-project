@@ -1,5 +1,5 @@
 .pin {
-    /* content: url(./img/pin.svg); */
+    content: url(./img/pin.svg);
     position: absolute;
     width: 20px;
     border: 0;
