@@ -1,9 +1,5 @@
 .pin {
-<<<<<<< HEAD
-    content: url(./img/pin.svg);
-=======
     content: url(./img/pinred.png);
->>>>>>> 6b2a5d06f8827e38c8716acbc69844736d28f6a0
     position: absolute;
     width: 20px;
     border: 0;
