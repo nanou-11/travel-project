@@ -11,7 +11,11 @@ import {
 import styles from "./EndPage.module.css";
 import {Link} from 'react-router-dom'
 
-const profileImage = require("./img/profile.jpg");
+const profileImageM = require("./img/marion.png");
+const profileImageA = require("./img/ameline.png");
+const profileImageG = require("./img/gilles.png");
+const profileImageAn = require("./img/anais.png");
+
 
 function EndPage() {
   return (
@@ -28,9 +32,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Gilles</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageG} />
                 </ToastBody>
               </Toast>
             </div>
@@ -39,9 +43,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Marion</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageM} />
                 </ToastBody>
               </Toast>
             </div>
@@ -50,9 +54,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Ameline</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageA} />
                 </ToastBody>
               </Toast>
             </div>
@@ -61,9 +65,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Anaïs</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageAn} />
                 </ToastBody>
               </Toast>
             </div>

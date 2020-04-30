@@ -3,7 +3,6 @@
     position: absolute;
     width: 20px;
     border: 0;
-    fill: #a5c400;
 }
 
 .background {
@@ -12,9 +11,7 @@
     position: absolute;
     height: auto;
     min-height: 100%;
-}
-.hidden {
-    visibility : hidden;
+
 }
 .visited:visited {
     filter: opacity(40%)

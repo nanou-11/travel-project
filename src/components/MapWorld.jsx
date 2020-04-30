@@ -37,7 +37,7 @@ function MapWorld({ city, country, video }) {
   const toggle9 = () => setModal9(!modal9);
 
   const [modal10, setModal10] = useState(false);
-  const toggle10 = () => setModal10(!modal10) ;
+  const toggle10 = () => setModal10(!modal10);
 
   const [modal11, setModal11] = useState(false);
   const toggle11= () => setModal11(!modal11);
