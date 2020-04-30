@@ -9,8 +9,13 @@ import {
   ToastBody
 } from "reactstrap";
 import styles from "./EndPage.module.css";
+import {Link} from 'react-router-dom'
 
-const profileImage = require("./img/profile.jpg");
+const profileImageM = require("./img/marion.png");
+const profileImageA = require("./img/ameline.png");
+const profileImageG = require("./img/gilles.png");
+const profileImageAn = require("./img/anais.png");
+
 
 function EndPage() {
   return (
@@ -18,7 +23,8 @@ function EndPage() {
       <Container>
         <Row className={styles.containerTitle}>
           <Col>
-            <h2>We hope this trip has you more. See you soon</h2>
+            <p className={styles.h2}>We hope this trip has you more.</p>
+            <p className={styles.h1}>See you soon !</p>
           </Col>
         </Row>
 
@@ -26,9 +32,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Gilles</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageG} />
                 </ToastBody>
               </Toast>
             </div>
@@ -37,9 +43,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Marion</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageM} />
                 </ToastBody>
               </Toast>
             </div>
@@ -48,9 +54,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Ameline</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageA} />
                 </ToastBody>
               </Toast>
             </div>
@@ -59,9 +65,9 @@ function EndPage() {
           <Col>
             <div className="p-3 my-2 rounded">
               <Toast>
-                <ToastHeader>Person</ToastHeader>
+                <ToastHeader>Anaïs</ToastHeader>
                 <ToastBody style={{ background: "white" }}>
-                  <img className={styles.photo} src={profileImage} />
+                  <img className={styles.photo} src={profileImageAn} />
                 </ToastBody>
               </Toast>
             </div>
@@ -70,7 +76,7 @@ function EndPage() {
 
         <Row className={styles.containerBouton}>
           <Col>
-            <Button color="danger">Restart the trip</Button>
+            <Button className={styles.buttonFinish} tag={Link} to='/'color="danger">Restart the trip</Button>
           </Col>
         </Row>
       </Container>
