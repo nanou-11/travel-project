@@ -15,7 +15,7 @@ function App() {
       <Switch>
           <Route exact path='/' component={Start}/>
           <Route path='/map' component={MapWorld}/>
-          <Route path='/finish' component={EndPage} />
+          <Route path='/end' component={EndPage} />
         </Switch>
       </BrowserRouter>
     </div>
