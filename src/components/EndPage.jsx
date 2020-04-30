@@ -9,6 +9,7 @@ import {
   ToastBody
 } from "reactstrap";
 import styles from "./EndPage.module.css";
+import {Link} from 'react-router-dom'
 
 const profileImage = require("./img/profile.jpg");
 
@@ -18,7 +19,8 @@ function EndPage() {
       <Container>
         <Row className={styles.containerTitle}>
           <Col>
-            <h2>We hope this trip has you more. See you soon</h2>
+            <p className={styles.h2}>We hope this trip has you more.</p>
+            <p className={styles.h1}>See you soon !</p>
           </Col>
         </Row>
 
@@ -70,7 +72,7 @@ function EndPage() {
 
         <Row className={styles.containerBouton}>
           <Col>
-            <Button color="danger">Restart the trip</Button>
+            <Button className={styles.buttonFinish} tag={Link} to='/'color="danger">Restart the trip</Button>
           </Col>
         </Row>
       </Container>
